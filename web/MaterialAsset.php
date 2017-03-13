@@ -1,5 +1,5 @@
 <?php
-namespace ramosisw\material\web;
+namespace ramosisw\CImaterial\web;
 
 use yii\base\Exception;
 use yii\web\AssetBundle as BaseMaterialAsset;
@@ -14,6 +14,8 @@ class MaterialAsset extends BaseMaterialAsset
     public $css = [
         'css/bootstrap.min.css',
         'css/material-dashboard.css',
+        'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
+        'http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons',
     ];
     public $js = [
         'js/jquery-3.1.0.min.js',
@@ -22,7 +24,6 @@ class MaterialAsset extends BaseMaterialAsset
         'js/chartist.min.js',
         'js/bootstrap-notify.js',
         'js/material-dashboard.js',
-        'js/jquery.sharrre.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',
