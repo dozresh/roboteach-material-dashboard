@@ -3,8 +3,6 @@
     "description": "Material dashboard backend theme asset bundle for Yii 2.0 Framework",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","material","dashboard","admin","theme","backend","asset","css","less"],
-    "tag" : "2.0.2",
-    "version" : "v2.0.2-beta",
     "license": "MIT",
     "authors": [
         {
@@ -19,6 +17,11 @@
     "autoload": {
         "psr-4": {
             "ramosisw\\CImaterial\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "1.0.0": "1.0.x-dev"
         }
     }
 }

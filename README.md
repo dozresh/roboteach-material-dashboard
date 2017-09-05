@@ -84,7 +84,7 @@ yii2-material-dashboard/
 Version logs
 ------------
 
-V1.0.0 21 Sept, 2016 - Initial Release
+V1.0.0 5 Sept, 2017 - Initial Release
 
 License
 -------
