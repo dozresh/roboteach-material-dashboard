@@ -29,7 +29,7 @@ class MaterialAsset extends BaseMaterialAsset
 
     public $depends = [
         'yii\web\YiiAsset',
-        'yii\web\JqueryAsset'
+        'yii\web\JqueryAsset',
         'yii\bootstrap\BootstrapAsset',
         'yii\bootstrap\BootstrapPluginAsset',
     ];
