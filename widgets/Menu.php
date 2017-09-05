@@ -23,20 +23,12 @@ class Menu extends \yii\widgets\Menu
     protected function renderItem($item)
     {
         if(isset($item['items'])) {
-<<<<<<< HEAD
             $labelTemplate = '<a href="{url}" class="{class}">{dropdownicon} {label}</a>';
             $linkTemplate = '<a href="{url}" class="{class}">{icon} {dropdownicon} {label}</a>';
-=======
-            $labelTemplate = '<a href="{url}">{dropdownicon} {label}</a>';
-            $linkTemplate = '<a href="{url}">{icon} {dropdownicon} {label}</a>';
->>>>>>> origin/master
-        }
-        else {
+        }else {
             $labelTemplate = $this->labelTemplate;
             $linkTemplate = $this->linkTemplate;
         }
-
-<<<<<<< HEAD
 
         $template = ArrayHelper::getValue($item, 'template', $linkTemplate);
         $replace = !empty($item['icon']) ? [
@@ -53,35 +45,6 @@ class Menu extends \yii\widgets\Menu
             '{class}' => empty($item['items']) ? '' : 'tree-toggle'
         ];
         return strtr($template, $replace);
-        
-=======
-        if (isset($item['url'])) {
-            $template = ArrayHelper::getValue($item, 'template', $linkTemplate);
-            $replace = !empty($item['icon']) ? [
-                '{url}' => Url::to($item['url']),
-                '{label}' => (empty($item['items']) ? '<p>' : '<p class="tree-toggle">').$item['label'].'</p>',
-                '{icon}' => '<i class="material-icons">' . $item['icon'] . '</i> ',
-                '{dropdownicon}' => $this->dropdownIcon
-            ] : [
-                '{url}' => Url::to($item['url']),
-                '{label}' => (empty($item['items']) ? '<p>' : '<p class="tree-toggle">').$item['label'].'</p>',
-                '{icon}' => null,
-                '{dropdownicon}' => $this->dropdownIcon,
-            ];
-            return strtr($template, $replace);
-        } else {
-            $template = ArrayHelper::getValue($item, 'template', $labelTemplate);
-            $replace = !empty($item['icon']) ? [
-                '{label}' => (empty($item['items']) ? '<p>' : '<p class="tree-toggle">').$item['label'].'</p>',
-                '{icon}' => '<i class="' . $item['icon'] . '"></i> ',
-                '{dropdownicon}' => $this->dropdownIcon,
-            ] : [
-                '{label}' => (empty($item['items']) ? '<p>' : '<p class="tree-toggle">').$item['label'].'</p>',
-                '{dropdownicon}' => $this->dropdownIcon,
-            ];
-            return strtr($template, $replace);
-        }
->>>>>>> origin/master
     }
     /**
      * Recursively renders the menu items (without the container tag).
