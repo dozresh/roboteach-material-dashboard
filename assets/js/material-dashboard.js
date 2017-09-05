@@ -56,15 +56,20 @@ $(document).ready(function(){
         $(this).parent(".input-group").removeClass("input-group-focus");
     });
 
+<<<<<<< HEAD
     //modificado
 
     $('a.tree-toggle').on("click", function (e) {
+=======
+    $('a:has(.tree-toggle)').on("click", function (e) {
+>>>>>>> origin/master
         e.preventDefault();
     });
 
     $('.tree-toggle').on("click", function (e) {
         $this = $(this);
         $.each($('.tree-toggle'),function(key,item){
+<<<<<<< HEAD
             skip = false;
             $.each($(item).parent().find('.tree-toggle'), function(key,item2){
                 if($(item2).is($this)) return skip = true;    
@@ -73,6 +78,12 @@ $(document).ready(function(){
             $(item).parent().children('ul.tree').hide(200);
         });
         $this.parent().children('ul.tree').toggle(200);
+=======
+            if($(item).is($this)) return;
+            $(item).parent().parent().children('ul.tree').hide(200);
+        });
+        $this.parent().parent().children('ul.tree').toggle(200);
+>>>>>>> origin/master
     });
 
 
