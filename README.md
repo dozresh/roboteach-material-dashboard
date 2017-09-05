@@ -1,4 +1,4 @@
-# [Material Dashboard - Free Bootstrap Material Design Admin](http://demos.creative-tim.com/material-dashboard/examples/dashboard.html)
+# [Yii2 Material Dashboard - Free Bootstrap Material Design Admin](http://demos.creative-tim.com/material-dashboard/examples/dashboard.html)
 
 ![alt text](http://s3.amazonaws.com/creativetim_bucket/products/50/original/opt_md_thumbnail.jpg "Material Dashboard Free")
 
@@ -15,31 +15,45 @@ Material Dashboard uses a framework built by our friend [Federico - Bootstrap Ma
 Special thanks go to:
 [Robert McIntosh](https://github.com/mouse0270/bootstrap-notify) for the notification system.
 [Chartist](https://gionkunz.github.io/chartist-js/) for the wonderful charts.
-We are very excited to share this dashboard with you and we look forward to hearing your feedback!
+[Creative Tim](https://github.com/creativetimofficial/material-dashboard/)
 
-You can find the Github Repo here.
+Installation
+------------
+The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
-## Links:
+To install Material Dashboard run:
 
-+ [Live Preview](http://demos.creative-tim.com/material-dashboard/examples/dashboard.html)
-+ [Material Kit - For Front End Development](http://www.creative-tim.com/product/material-kit?ref=github-md-free)
-+ [Material Dashboard PRO](http://www.creative-tim.com/product/material-dashboard-pro?ref=github-md-free) (from $49)
+```
+php composer.phar require ramosisw/yii2-material-dashboard "dev-master"
+```
 
-## Quick start
+## Or
 
-Quick start options:
+Add to composer.json
 
-- [Download from Github](https://github.com/creativetimofficial/material-dashboard/archive/master.zip).
-- [Download from Creative Tim](http://www.creative-tim.com/product/material-dashboard).
-- Clone the repo: `git clone https://github.com/creativetimofficial/material-dashboard.git`.
+```
+{
+	...
+	"require": {
+		...
+		"ramosisw/yii2-material-dashboard": "dev-master"
+	}
+	...
+}
+```
 
+And run
+
+```
+php composer.phar update
+```
 
 ### What's included
 
 Within the download you'll find the following directories and files:
 
 ```
-material-dashboard/
+yii2-material-dashboard/
 ├── assets/
 |   ├── css/
 |   |   ├── bootstrap.min.css
@@ -57,46 +71,23 @@ material-dashboard/
 |   |    ├── md
 |   |    └── material-dashboard.scss
 |   └── img/
-|
 ├── documentation/
 ├── examples/
-
+├── web/
+|   └── MaterialAsset.php
+|
+└── widgets/
+    ├── Alert.php
+    └── MaterialAsset.php
 ```
 
-### Version logs
+Version logs
+------------
 
 V1.0.0 21 Sept, 2016 - Initial Release
 
-V1.1.0 10 Nov, 2016 - New Page Added
-- fix link in documentation
-- for those who want to upsell inside their dashboard we added a new page "Upgrade to PRO" with a pricing and options table
-
-V1.1.1 8 Feb 2017
-- switched to MIT License
-
-### License
+License
+-------
 
 - Copyright 2017 Creative Tim (http://www.creative-tim.com)
 - Licensed under MIT (https://github.com/creativetimofficial/material-dashboard/blob/master/LICENSE.md)
-
-## Useful Links
-
-More products from Creative Tim: <http://www.creative-tim.com/products>
-
-Tutorials: <https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w>
-
-Freebies: <http://www.creative-tim.com/products>
-
-Affiliate Program (earn money): <http://www.creative-tim.com/affiliates/new>
-
-Social Media:
-
-Twitter: <https://twitter.com/CreativeTim>
-
-Facebook: <https://www.facebook.com/CreativeTim>
-
-Dribbble: <https://dribbble.com/creativetim>
-
-Google+: <https://plus.google.com/+CreativetimPage>
-
-Instagram: <https://instagram.com/creativetimofficial>
