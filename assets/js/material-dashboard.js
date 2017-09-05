@@ -56,15 +56,27 @@ $(document).ready(function(){
         $(this).parent(".input-group").removeClass("input-group-focus");
     });
 
+    $('a:has(.tree-toggle)').on("click", function (e) {
+        e.preventDefault();
+    });
+
+    $('.tree-toggle').on("click", function (e) {
+        $this = $(this);
+        $.each($('.tree-toggle'),function(key,item){
+            if($(item).is($this)) return;
+            $(item).parent().parent().children('ul.tree').hide(200);
+        });
+        $this.parent().parent().children('ul.tree').toggle(200);
+    });
+
+
 });
 
 // activate collapse right menu when the windows is resized
 $(window).resize(function(){
     md.initSidebarsCheck();
-
     // reset the seq for charts drawing animations
     seq = seq2 = 0;
-
 });
 
 md = {
@@ -337,14 +349,14 @@ md = {
 // leading edge, instead of the trailing.
 
 function debounce(func, wait, immediate) {
-	var timeout;
-	return function() {
-		var context = this, args = arguments;
-		clearTimeout(timeout);
-		timeout = setTimeout(function() {
-			timeout = null;
-			if (!immediate) func.apply(context, args);
-		}, wait);
-		if (immediate && !timeout) func.apply(context, args);
-	};
+    var timeout;
+    return function() {
+        var context = this, args = arguments;
+        clearTimeout(timeout);
+        timeout = setTimeout(function() {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+        }, wait);
+        if (immediate && !timeout) func.apply(context, args);
+    };
 };
