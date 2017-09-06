@@ -88,10 +88,5 @@ V1.0.0 5 Sept, 2017 - Initial Release
 
 License
 -------
-
 - Copyright 2017 Creative Tim (http://www.creative-tim.com)
-<<<<<<< HEAD
 - Licensed under MIT (https://github.com/creativetimofficial/material-dashboard/blob/master/LICENSE.md)
-=======
-- Licensed under MIT (https://github.com/creativetimofficial/material-dashboard/blob/master/LICENSE.md)
->>>>>>> origin/master
