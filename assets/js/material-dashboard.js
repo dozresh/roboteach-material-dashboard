@@ -61,9 +61,14 @@ $(document).ready(function(){
     $('.tree-toggle').on("click", function (e) {
         $this = $(this);
         $.each($('.tree-toggle'),function(key,item){
-            $(item).parent().parent().children('ul.tree').hide(200);
+            skip = false;
+            $.each($(item).parent().find('.tree-toggle'), function(key,item2){
+                if($(item2).is($this)) return skip = true;    
+            });
+            if($(item).is($this) || skip) return;
+            $(item).parent().children('ul.tree').hide(200);
         });
-        $this.parent().parent().children('ul.tree').toggle(200);
+        $this.parent().children('ul.tree').toggle(200);
     });
 
 
