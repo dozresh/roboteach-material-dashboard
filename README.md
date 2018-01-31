@@ -48,6 +48,28 @@ And run
 php composer.phar update
 ```
 
+Usage
+-----
+in your layouts/main.php include followin code
+
+```
+<?php
+
+/* @var $this \yii\web\View */
+/* @var $content string */
+/*
+use yii\dependencies
+*/
+//Register class
+if (class_exists('ramosisw\CImaterial\web\MaterialAsset')) {
+    ramosisw\CImaterial\web\MaterialAsset::register($this);
+}
+?>
+<?php $this->beginPage() ?>
+<!DOCTYPE html>
+```
+
+
 ### What's included
 
 Within the download you'll find the following directories and files:
