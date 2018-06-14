@@ -23,7 +23,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 
 To install Material Dashboard run:
 
-```
+```sh
 php composer.phar require ramosisw/yii2-material-dashboard "dev-master"
 ```
 
@@ -31,20 +31,17 @@ php composer.phar require ramosisw/yii2-material-dashboard "dev-master"
 
 Add to composer.json
 
-```
+```json
 {
-	...
 	"require": {
-		...
 		"ramosisw/yii2-material-dashboard": "dev-master"
 	}
-	...
 }
 ```
 
 And run
 
-```
+```sh
 php composer.phar update
 ```
 
@@ -52,7 +49,7 @@ Usage
 -----
 in your layouts/main.php include followin code
 
-```
+```php
 <?php
 
 /* @var $this \yii\web\View */
