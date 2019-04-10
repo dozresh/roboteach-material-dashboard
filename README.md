@@ -24,7 +24,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 To install Material Dashboard run:
 
 ```sh
-php composer.phar require ramosisw/yii2-material-dashboard "dev-master"
+php composer.phar require dozresh/roboteach-material-dashboard "dev-master"
 ```
 
 ## Or
@@ -34,7 +34,7 @@ Add to composer.json
 ```json
 {
 	"require": {
-		"ramosisw/yii2-material-dashboard": "dev-master"
+		"dozresh/roboteach-material-dashboard": "dev-master"
 	}
 }
 ```
