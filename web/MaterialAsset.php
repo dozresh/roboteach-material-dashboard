@@ -10,7 +10,7 @@ use yii\web\AssetBundle as BaseMaterialAsset;
  */
 class MaterialAsset extends BaseMaterialAsset
 {
-    public $sourcePath = '@vendor/ramosisw/yii2-material-dashboard/assets';
+    public $sourcePath = '@vendor/dozresh/roboteach-material-dashboard/assets';
 
 
     public $css = [
